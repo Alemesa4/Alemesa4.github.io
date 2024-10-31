@@ -1,0 +1,137 @@
+.Bloque{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.pokeball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("Pokeball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+}
+    
+img{
+    width: 70px;
+    min-height: 70px;
+object-fit: contain;
+}
+body{
+    text-align: center;
+}
+.types-pokemon{
+    border-radius: 10px;
+    width: 55px;
+}
+.Bug-background {
+    background-color: #8CB230;
+    color: white;
+}
+
+.Normal-background {
+    background-color: #A8A77A;
+    color: white;
+}
+
+.Fire-background {
+    background-color: #EE8130;
+    color: white;
+}
+
+.Water-background {
+    background-color: #6390F0;
+    color: white;
+}
+
+.Electric-background {
+    background-color: #F7D02C;
+    color: white;
+}
+
+.Grass-background {
+    background-color: #7AC74C;
+    color: white;
+}
+
+.Ice-background {
+    background-color: #96D9D6;
+    color: white;
+}
+
+.Fighting-background {
+    background-color: #C22E28;
+    color: white;
+}
+
+.Poison-background {
+    background-color: #A33EA1;
+    color: white;
+}
+
+.Ground-background {
+    background-color: #E2BF65;
+    color: white;
+}
+
+.Flying-background {
+    background-color: #A98FF3;
+    color: white;
+}
+
+.Psychic-background {
+    background-color: #F95587;
+    color: white;
+}
+
+.Bug-background {
+    background-color: #A6B91A;
+    color: white;
+}
+
+.Rock-background {
+    background-color: #B6A136;
+    color: white;
+}
+
+.Ghost-background {
+    background-color: #735797;
+    color: white;
+}
+
+.Dragon-background {
+    background-color: #6F35FC;
+    color: white;
+}
+
+.Dark-background {
+    background-color: #705746;
+    color: white;
+}
+
+.Steel-background {
+    background-color: #B7B7CE;
+    color: white;
+}
+
+.Fairy-background {
+    background-color: #D685AD;
+    color: white;
+}
+
+.divtypes{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
