@@ -149,7 +149,10 @@ const pokemon = [
     { id: 148, name: "Dragonair", img: "https://projectpokemon.org/images/normal-sprite/dragonair.gif", types: ["Dragon"] },
     { id: 149, name: "Dragonite", img: "https://projectpokemon.org/images/normal-sprite/dragonite.gif", types: ["Dragon", "Flying"] },
     { id: 150, name: "Mewtwo", img: "https://projectpokemon.org/images/normal-sprite/mewtwo.gif", types: ["Psychic"] },
-    { id: 151, name: "Mew", img: "https://projectpokemon.org/images/normal-sprite/mew.gif", types: ["Psychic"] }
+    { id: 151, name: "Mew", img: "https://projectpokemon.org/images/normal-sprite/mew.gif", types: ["Psychic"] },
+    {id:152, name:"Ducklett", img:"https://projectpokemon.org/images/normal-sprite/ducklett.gif", types:["Water","Flying"] , 
+    }
+
 ];
 const Bloque= document.getElementById("Bloque");
 document.addEventListener("DOMContentLoaded",function mostrarpokemon(){

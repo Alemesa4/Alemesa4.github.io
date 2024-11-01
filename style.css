@@ -1,7 +1,7 @@
 .Bloque{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 15px;
     justify-items: center;
     width: 100%;
     padding: 10px;
@@ -29,9 +29,12 @@ object-fit: contain;
 }
 body{
     text-align: center;
+    background-color: #f7e8e3;
 }
 .types-pokemon{
+    border: 1px solid black;
     border-radius: 10px;
+    padding: 1px;
     width: 55px;
 }
 .Bug-background {
