@@ -151,18 +151,25 @@ const pokemon = [
     { id: 150, name: "Mewtwo", img: "https://projectpokemon.org/images/normal-sprite/mewtwo.gif", types: ["Psychic"], evo: 4 },
     { id: 151, name: "Mew", img: "https://projectpokemon.org/images/normal-sprite/mew.gif", types: ["Psychic"], evo: 4 },
 ];
-
+function elegirpokemon(index) {
+    console.log(pokemon[index]);
+    let pokemonRival = pokemon[Math.floor(Math.random() * pokemon.length)];
+    localStorage.setItem('tupokemon', JSON.stringify(pokemon[index]));
+    localStorage.setItem('pokemonRival', JSON.stringify(pokemonRival));
+    window.location.href = 'fase2.html';
+};
 
 const Bloque = document.getElementById("Bloque");
 document.addEventListener("DOMContentLoaded", function mostrarpokemon() {
-    pokemon.forEach(pokemon => {
+    pokemon.forEach((pokemon, index) => {
         const numshiny = Math.floor(Math.random() * 2) + 1;
         let shiny = false;
         if (numshiny == 1) {
             shiny = true;
         }
         const pokeball = document.createElement("div");
-        pokeball.setAttribute("onclick" , "elegirpokemon ()");
+        pokeball.setAttribute("onclick" , `elegirpokemon(${index})`);
+        
         switch (pokemon.evo) {
             case 1:
                 pokeball.classList.add("pokeball");
@@ -211,13 +218,11 @@ document.addEventListener("DOMContentLoaded", function mostrarpokemon() {
         pokeball.appendChild(divtypes);
         Bloque.appendChild(pokeball);
 
+ 
     });
 
-});
 
-function elegirpokemon () {
-    let pokemonRival = pokemon[Math.floor(Math.random() * pokemon.length)];
-    localStorage.setItem('tupokemon', JSON.stringify(pokemon));
-    localStorage.setItem('pokemonRival', JSON.stringify(pokemonRival));
-    window.location.href = 'fase2.html';
-};
+},
+);
+
+

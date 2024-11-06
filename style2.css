@@ -1,0 +1,66 @@
+.pokeball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("Pokeball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+}
+.superball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("Superball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+}
+.ultraball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("Ultra-ball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+
+}
+.masterball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("master-ball.jpg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+
+}

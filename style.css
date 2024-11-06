@@ -5,6 +5,11 @@
     justify-items: center;
     width: 100%;
     padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7em;
+}
+h1{
+    font-family: 'Press Start 2P', cursive;
 }
 .pokeball{
     width: 100px;
@@ -24,7 +29,7 @@
 }
 
 .pokeball:hover{
-    transform: scale(1.1); 
+    transform: scale(1.2); 
     border-color: red; 
 }
 .superball{
@@ -44,7 +49,7 @@
     transition: transform 0.3s ease; 
 }
 .superball:hover{
-    transform: scale(1.1); 
+    transform: scale(1.2); 
     border-color: blue; 
 }
 .ultraball{
@@ -65,7 +70,7 @@
 
 }
 .ultraball:hover{
-    transform: scale(1.1); 
+    transform: scale(1.2); 
     border-color: rgb(255, 221, 0) ; 
 }
 .masterball{
@@ -86,7 +91,7 @@
 
 }
 .masterball:hover{
-    transform: scale(1.1); 
+    transform: scale(1.2); 
     border-color: purple ; 
 }
 .estrella{
@@ -107,6 +112,9 @@ body{
     border-radius: 10px;
     padding: 1px;
     width: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 .Bug-background {
     background-color: #8CB230;
