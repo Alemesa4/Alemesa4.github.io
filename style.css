@@ -20,12 +20,83 @@
     background-repeat: no-repeat;
     background-position: center;
     gap: 10px;
+    transition: transform 0.3s ease; 
 }
-    
+
+.pokeball:hover{
+    transform: scale(1.1); 
+    border-color: red; 
+}
+.superball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("Superball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+}
+.superball:hover{
+    transform: scale(1.1); 
+    border-color: blue; 
+}
+.ultraball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("Ultra-ball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+
+}
+.ultraball:hover{
+    transform: scale(1.1); 
+    border-color: rgb(255, 221, 0) ; 
+}
+.masterball{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("master-ball.jpg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease; 
+
+}
+.masterball:hover{
+    transform: scale(1.1); 
+    border-color: purple ; 
+}
+.estrella{
+    width: 20px;
+    min-height: 20px;
+}
 img{
     width: 70px;
     min-height: 70px;
-object-fit: contain;
+    object-fit: contain;
 }
 body{
     text-align: center;
@@ -136,5 +207,5 @@ body{
     display: flex;
     flex-direction: row;
     gap: 5px;
-
 }
+
