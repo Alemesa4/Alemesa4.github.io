@@ -1,0 +1,253 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../IMG/FONDO VS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tu {
+    font-family: 'Press Start 2P', cursive;
+    color: #96b2ee;
+    padding: 10px;
+    background-color: rgba(59, 182, 227, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.red {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(210, 0, 52);
+    padding: 10px;
+    background-color: rgba(255, 0, 128, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.combatir {
+    font-family: 'Press Start 2P', cursive;
+    color: #0f1421;
+    padding: 10px;
+    background-color: rgb(89, 117, 208);
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.combatir:hover {
+    background-color: rgb(179, 185, 243);
+    cursor: pointer;
+}
+
+#Bloque {
+    display: flex;
+    gap: 15px;
+    justify-items: center;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+    background-color: rgba(99, 193, 240, 0.3);
+    width: 50%;
+    box-shadow: 2px 2px 2px black;
+    padding: 30px;
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5%;
+}
+
+img {
+    width: 70px;
+    min-height: 70px;
+    object-fit: contain;
+}
+
+.pokeball {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("../IMG/Pokeball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.superball {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("../IMG/Superball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.ultraball {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("../IMG/Ultra-ball.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.masterball {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: url("../IMG/master-ball.jpg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.types-pokemon {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px;
+    width: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.Bug-background {
+    background-color: #8CB230;
+    color: white;
+}
+
+.Normal-background {
+    background-color: #A8A77A;
+    color: white;
+}
+
+.Fire-background {
+    background-color: #EE8130;
+    color: white;
+}
+
+.Water-background {
+    background-color: #6390F0;
+    color: white;
+}
+
+.Electric-background {
+    background-color: #F7D02C;
+    color: white;
+}
+
+.Grass-background {
+    background-color: #7AC74C;
+    color: white;
+}
+
+.Ice-background {
+    background-color: #96D9D6;
+    color: white;
+}
+
+.Fighting-background {
+    background-color: #C22E28;
+    color: white;
+}
+
+.Poison-background {
+    background-color: #A33EA1;
+    color: white;
+}
+
+.Ground-background {
+    background-color: #E2BF65;
+    color: white;
+}
+
+.Flying-background {
+    background-color: #A98FF3;
+    color: white;
+}
+
+.Psychic-background {
+    background-color: #F95587;
+    color: white;
+}
+
+.Bug-background {
+    background-color: #A6B91A;
+    color: white;
+}
+
+.Rock-background {
+    background-color: #B6A136;
+    color: white;
+}
+
+.Ghost-background {
+    background-color: #735797;
+    color: white;
+}
+
+.Dragon-background {
+    background-color: #6F35FC;
+    color: white;
+}
+
+.Dark-background {
+    background-color: #705746;
+    color: white;
+}
+
+.Steel-background {
+    background-color: #B7B7CE;
+    color: white;
+}
+
+.Fairy-background {
+    background-color: #D685AD;
+    color: white;
+}
+
+.divtypes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
