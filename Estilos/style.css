@@ -3,7 +3,6 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 5px;
     justify-items: center;
-    width: 100%;
     padding: 10px;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.7em;
@@ -129,8 +128,8 @@ img{
 }
 body{
     text-align: center;
-    background-image: url("");
-    background-repeat: no-repeat;
+    background-image: url("../IMG/Fondo\ Seleccion.webp");
+    background-repeat: repeat;
     background-position: cover ;
 }
 .types-pokemon{
@@ -250,7 +249,7 @@ body{
     width: 100%;
     height: 100%;
     pointer-events: none;
-    display: none; /* Se muestra al pasar el cursor */
+    display: none; 
   }
   
   .sparkle {

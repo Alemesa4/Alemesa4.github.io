@@ -251,3 +251,13 @@ img {
     flex-direction: row;
     gap: 5px;
 }
+#botonm{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mute{
+cursor: pointer;
+width: 50px;
+height: auto;
+}
