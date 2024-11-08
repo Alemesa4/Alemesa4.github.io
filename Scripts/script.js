@@ -181,7 +181,7 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", function mostrarpokemon() {
     
     pokemon.forEach((pokemon, index) => {
-        const numshiny = Math.floor(Math.random() * 100) + 1;
+        const numshiny = Math.floor(Math.random() * 2) + 1;
         let shiny = false;
         if (numshiny == 1) {
             shiny = true;

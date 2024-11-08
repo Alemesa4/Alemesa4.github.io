@@ -8,3 +8,11 @@ cursor: pointer;
 width: 50px;
 height: auto;
 }
+.campo{
+    width: 100%; /* Ancho del div */
+    height: 100%; /* Altura del div */
+    background-image: url('../IMG/Fondo\ batalla\ Pokemon.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
