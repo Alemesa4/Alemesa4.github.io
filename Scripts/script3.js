@@ -1,6 +1,7 @@
 const tupokemon = JSON.parse(localStorage.getItem('tupokemon'));
 const pokemonRival = JSON.parse(localStorage.getItem('pokemonrival'));
 const Bloque =document.getElementById("Bloque");
+console.log(tupokemon,pokemonRival)
 
 window.addEventListener("load", () => {
     const audio = document.getElementById("audio");
@@ -19,18 +20,24 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", function () {
 const campo =document.createElement("div");
 campo.classList.add("campo");
-const tupokemon=document.createElement("div");
-tupokemon.classList.add("tupokemon");
+const pokemon1=document.createElement("div");
+pokemon1.classList.add("tupokemon");
 const imgtu=document.createElement("img");
 imgtu.src=tupokemon.img;
-tupokemon.appendChild(imgtu);
+pokemon1.appendChild(imgtu);
 const name=document.createElement("span");
 name.innerText=tupokemon.name;
-tupokemon.appendChild(name);
-const divtypes=document.createElement("div");
-divtypes.classList.add("divtypes");
-tupokemon.appendChild(divtypes);
-campo.appendChild(tupokemon);
+pokemon1.appendChild(name);
+const pokemon2 = document.createElement("div");
+pokemon2.classList.add("rivalpokemon");
+const imgrival = document.createElement("img");
+imgrival.src = pokemonRival.img;
+pokemon2.appendChild(imgrival);
+const nameRival = document.createElement("span");
+nameRival.innerText = pokemonRival.name;
+pokemon2.appendChild(nameRival);
+campo.appendChild(pokemon1);
+campo.appendChild(pokemon2);
 Bloque.appendChild(campo);
 })
 

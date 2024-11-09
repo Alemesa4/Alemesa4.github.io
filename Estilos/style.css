@@ -25,6 +25,7 @@ height: auto;
 }
 h1{
     font-family: 'Press Start 2P', cursive;
+    color:white;
 }
 .pokeball{
     width: 100px;
@@ -128,9 +129,10 @@ img{
 }
 body{
     text-align: center;
-    background-image: url("../IMG/Fondo\ Seleccion.webp");
+    background-image: url("../IMG/Fondo\ Seleccion.png");
     background-repeat: repeat;
     background-position: cover ;
+    
 }
 .types-pokemon{
     border: 1px solid black;

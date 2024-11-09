@@ -1,3 +1,8 @@
+.Bloque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #botonm{
     position: fixed;
     top: 0;
@@ -9,10 +14,41 @@ width: 50px;
 height: auto;
 }
 .campo{
-    width: 100%; /* Ancho del div */
-    height: 100%; /* Altura del div */
+    position: relative;
+    width: 1000px;
+    height: 700px; 
     background-image: url('../IMG/Fondo\ batalla\ Pokemon.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.tupokemon{
+    font-family: 'Press Start 2P', cursive;
+    display:flex;
+    flex-direction:column-reverse;
+    width:300px;
+    height: 300px;
+    position: absolute;
+    top: 40%; 
+    left: 20%;
+}
+.rivalpokemon{
+    font-family: 'Press Start 2P', cursive;
+    display:flex;
+    flex-direction:column-reverse;
+    width:300px;
+    height: 300px;
+    position: absolute;
+    top: 10%; 
+    left: 65%;
+}
+.tupokemon img{
+    width:120px;
+    height:auto;
+    object-fit:contain;
+}
+.rivalpokemon img{
+    width:120px;
+    height: auto;
+    object-fit: contain;
 }
