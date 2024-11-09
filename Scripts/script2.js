@@ -1,6 +1,6 @@
 const tupokemon = JSON.parse(localStorage.getItem('tupokemon'));
 const pokemon = JSON.parse(localStorage.getItem('pokemonarray'));
-const pokemonRival = pokemon[Math.floor(Math.random() * pokemon.length)];
+const pokemonRival = pokemon[68];
 const Bloque = document.getElementById("Bloque");
 const textoTu=document.createElement("h2");
 window.addEventListener("load", () => {

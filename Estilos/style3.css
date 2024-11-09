@@ -1,54 +1,166 @@
-.Bloque{
+.Bloque {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#botonm{
+
+#botonm {
+    z-index: 1;
+
     position: fixed;
     top: 0;
     left: 0;
 }
-.mute{
-cursor: pointer;
-width: 50px;
-height: auto;
+
+.mute {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
 }
-.campo{
+
+.campo {
     position: relative;
-    width: 1000px;
-    height: 700px; 
-    background-image: url('../IMG/Fondo\ batalla\ Pokemon.jpeg');
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background-image: url('../IMG/Fondo\ Batalla\ Pokemon.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.tupokemon{
+
+.tupokemon {
     font-family: 'Press Start 2P', cursive;
-    display:flex;
-    flex-direction:column-reverse;
-    width:300px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
     height: 300px;
     position: absolute;
-    top: 40%; 
+    top: 40%;
     left: 20%;
 }
-.rivalpokemon{
+
+.rivalpokemon {
     font-family: 'Press Start 2P', cursive;
-    display:flex;
-    flex-direction:column-reverse;
-    width:300px;
-    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
     position: absolute;
-    top: 10%; 
-    left: 65%;
+    top: 15%;
+    left: 60%;
 }
-.tupokemon img{
-    width:120px;
-    height:auto;
-    object-fit:contain;
-}
-.rivalpokemon img{
-    width:120px;
+
+.tupokemon img {
+    min-height: 150px;
+    width: 150px;
     height: auto;
     object-fit: contain;
+}
+
+.rivalpokemon img {
+    min-height: 200px;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.pokemondiv {
+    position: absolute;
+    top: 10%;
+    right: 35%;
+    background-image: url('../IMG/CuadroPelea.png');
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hpdiv {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: small;
+    font-size: 75%;
+}
+
+.pokemondiv2 {
+    position: absolute;
+    bottom: 90%;
+    right: 0%;
+    background-image: url('../IMG/CuadroPelea.png');
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hpdiv2 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 75%;
+}
+
+.hpbarbackground {
+    margin-left: 15.5%;
+    position: absolute;
+    top: 46%;
+    width: 64%;
+    height: 20px;
+    background-color: #ddd;
+    margin-top: 5px;
+}
+
+.hpbar {
+    margin-left: 15.5%;
+    position: absolute;
+    top: 52%;
+    width: 64%;
+    height: 22px;
+    background-color: green;
+    transition: width 0.5s ease;
+}
+
+.hpbarbackground2 {
+    margin-left: 15.5%;
+    position: absolute;
+    top: 46%;
+    width: 64%;
+    height: 20px;
+    background-color: #ddd;
+    margin-top: 5px;
+}
+
+.hpbar2 {
+    margin-left: 15.5%;
+    position: absolute;
+    top: 52%;
+    width: 64%;
+    height: 22px;
+    background-color: green;
+    transition: width 0.5s ease;
+}
+
+.menu{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+.menu button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-small;
+    background-color: #d7bc82;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    
+
+}
+
+.menu button:hover{
+    background-color:#967e5e;
+    cursor: pointer; 
 }
