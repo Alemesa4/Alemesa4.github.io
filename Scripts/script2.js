@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function mostrarpokemon() {
     Bloque.appendChild(textoRival);
     Bloque.appendChild(botoncombatir);
     botoncombatir.onclick = () => {
+        localStorage.setItem('tupokemon', JSON.stringify(tupokemon));
         localStorage.setItem('pokemonrival', JSON.stringify(pokemonRival));
         window.location.href = "batalla.html";
     }
