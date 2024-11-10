@@ -267,3 +267,17 @@ body{
     0%, 100% { opacity: 0; transform: scale(1); }
     50% { opacity: 1; transform: scale(1.5); }
   }
+  .aleatorio{
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-small;
+    background-color: #d7bc82;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .aleatorio:hover{
+    background-color:#967e5e;
+    cursor: pointer; 
+
+  }

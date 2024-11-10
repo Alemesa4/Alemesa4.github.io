@@ -25,13 +25,12 @@ h1 {
 
 .red {
     font-family: 'Press Start 2P', cursive;
-    color: rgb(210, 0, 52);
+    color: white;
     padding: 10px;
-    background-color: rgba(255, 0, 128, 0.3);
+    background-color: rgb(199, 0, 0,0.8);
     border-radius: 10px;
     text-align: center;
 }
-
 .combatir {
     font-family: 'Press Start 2P', cursive;
     color: #0f1421;
@@ -51,12 +50,11 @@ h1 {
     display: flex;
     gap: 15px;
     justify-items: center;
-    width: 100%;
     padding: 10px;
     font-family: 'Press Start 2P', cursive;
     border-radius: 10px;
     background-color: rgba(99, 193, 240, 0.3);
-    width: 50%;
+    width: 30%;
     box-shadow: 2px 2px 2px black;
     padding: 30px;
     font-size: 0.7em;
@@ -261,4 +259,13 @@ img {
 cursor: pointer;
 width: 50px;
 height: auto;
+}
+
+@keyframes ampliar {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }

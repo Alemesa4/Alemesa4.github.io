@@ -1,15 +1,37 @@
 .Bloque {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #botonm {
     z-index: 1;
-
     position: fixed;
     top: 0;
     left: 0;
+}
+.log {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 20%;
+    height: 30%;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 10px;
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 10px;
+    }
 }
 
 .mute {
@@ -39,7 +61,6 @@
     top: 40%;
     left: 20%;
 }
-
 .rivalpokemon {
     font-family: 'Press Start 2P', cursive;
     display: flex;
@@ -164,4 +185,20 @@
 .menu button:hover{
     background-color:#967e5e;
     cursor: pointer; 
+}
+.mensajefinal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

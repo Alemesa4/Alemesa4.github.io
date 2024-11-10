@@ -1,13 +1,15 @@
 const tupokemon = JSON.parse(localStorage.getItem('tupokemon'));
 const pokemonRival = JSON.parse(localStorage.getItem('pokemonrival'));
 const Bloque =document.getElementById("Bloque");
-import { atacar, actualizarhp,curar} from './batalla.js';
-
+import { atacar, actualizarhp,curar,retirada} from './batalla.js';
 console.log(tupokemon,pokemonRival)
 
+// archivo1.js
+export const audio = document.getElementById("audio");
+
 window.addEventListener("load", () => {
-    const audio = document.getElementById("audio");
     let botonm = document.getElementById("botonm");
+    audio.volume = 0.5;
 
     botonm.onclick = () => {
         if (audio.paused) {
@@ -15,13 +17,14 @@ window.addEventListener("load", () => {
             botonm.innerHTML = `<img src="img/Volumen UP.png" alt="Unmute" class="mute"/>`;
         } else {
             audio.pause();
-            botonm.innerHTML = `<img src="img/Volumen  OFF.png" alt="Mute" class="mute"/>`;
+            botonm.innerHTML = `<img src="img/Volumen OFF.png" alt="Mute" class="mute"/>`;
         }
-    }
-})
-document.addEventListener("DOMContentLoaded", function () {
-    const campo =document.createElement("div");
-    campo.classList.add("campo");
+    };
+});
+
+document.addEventListener("DOMContentLoaded", function () { 
+  
+    const campo=document.getElementById("campo");
     const pokemon1=document.createElement("div");
     pokemon1.classList.add("tupokemon");
     const imgtu=document.createElement("img");
@@ -98,7 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
     const retirarse=document.createElement("button");
     retirarse.innerText="RETIRARSE";
-    ataque.setAttribute("class","retirarse ");
+    retirarse.setAttribute("class","retirarse ");
+    retirarse.onclick=()=>retirada();
     menu.appendChild(retirarse);
     
     campo.appendChild(menu);

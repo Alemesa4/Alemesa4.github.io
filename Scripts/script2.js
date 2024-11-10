@@ -1,11 +1,12 @@
 const tupokemon = JSON.parse(localStorage.getItem('tupokemon'));
 const pokemon = JSON.parse(localStorage.getItem('pokemonarray'));
-const pokemonRival = pokemon[68];
+const pokemonRival = pokemon[Math.floor(Math.random() * pokemon.length)];
 const Bloque = document.getElementById("Bloque");
 const textoTu=document.createElement("h2");
 window.addEventListener("load", () => {
     const audio = document.getElementById("audio");
     let botonm = document.getElementById("botonm");
+    audio.volume=0.5;
 
     botonm.onclick = () => {
         if (audio.paused) {
@@ -28,13 +29,17 @@ botoncombatir.setAttribute("class","combatir");
 console.log(tupokemon);
 document.addEventListener("DOMContentLoaded", function mostrarpokemon() {
     const vs = document.createElement("div");
-    vs.innerText = "VS";
+    vs.innerHTML = `<img src="IMG/VS.png" class="vs" alt="vs">`;
+    vs.firstChild.style.animation = "ampliar 1s ease-in-out infinite alternate";
+    vs.firstChild.style.animationDelay = "0.5s";
+    vs.firstChild.style.animationDirection = "alternate";
+
+
     
     const pokeball = document.createElement("div");
     switch (tupokemon.evo) {
         case 1:
             pokeball.classList.add("pokeball");
-
             break;
         case 2:
             pokeball.classList.add("superball");
