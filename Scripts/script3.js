@@ -14,10 +14,10 @@ window.addEventListener("load", () => {
     botonm.onclick = () => {
         if (audio.paused) {
             audio.play();
-            botonm.innerHTML = `<img src="../IMG/Volumen UP.png" alt="Unmute" class="mute"/>`;
+            botonm.innerHTML = `<img src="IMG/Volumen UP.png" alt="Unmute" class="mute"/>`;
         } else {
             audio.pause();
-            botonm.innerHTML = `<img src="../IMG/Volumen OFF.png" alt="Mute" class="mute"/>`;
+            botonm.innerHTML = `<img src="IMG/Volumen OFF.png" alt="Mute" class="mute"/>`;
         }
     }
 });
